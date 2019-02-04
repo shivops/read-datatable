@@ -3,10 +3,10 @@ import java.util.Properties;
 public class jtest{
 	public static void main(String[] args) {
 		try(
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample", "root", "user");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbname", "username", "password");
 Statement stmt = conn.createStatement();
 ) {
-String strSelect = "select no, name from data";
+String strSelect = "select no, name from datatablename";
 System.out.println("The SQL query is: " + strSelect);
 System.out.println();
 
